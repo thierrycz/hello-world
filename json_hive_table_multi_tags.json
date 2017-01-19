@@ -1,0 +1,1542 @@
+{
+
+    "requestId": "qtp662559856-63035 - 06adf45f-3d40-4874-bdf1-486ef42ad20c",
+    "query": "hive_table where name='xdpdpa_dpae'",
+    "queryType": "dsl",
+    "count": 1,
+    "results": [
+        {
+            "$typeName$": "hive_table",
+            "$id$": {
+                "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                "$typeName$": "hive_table",
+                "version": 0,
+                "state": "ACTIVE"
+            },
+            "aliases": null,
+            "comment": null,
+            "retention": 0,
+            "parameters": {
+                "transient_lastDdlTime": "1483522459"
+            },
+            "qualifiedName": "braff.xdpdpa_dpae@Sandbox",
+            "partitionKeys": [
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "072fcd76-cdb2-4172-8cd8-e66ca9a3a271",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": null,
+                    "qualifiedName": "braff.xdpdpa_dpae.annee@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "annee",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "6e41559d-f779-41ad-b654-95905216993d",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": null,
+                    "qualifiedName": "braff.xdpdpa_dpae.mois@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "mois",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                }
+            ],
+            "sd": {
+                "$typeName$": "hive_storagedesc",
+                "$id$": {
+                    "id": "dd814686-36b9-422a-8947-033e7bcd11cb",
+                    "$typeName$": "hive_storagedesc",
+                    "version": 0,
+                    "state": "ACTIVE"
+                },
+                "parameters": null,
+                "compressed": false,
+                "outputFormat": "org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat",
+                "location": "hdfs://sandbox.hortonworks.com:8020/apps/hive/warehouse/braff.db/xdpdpa_dpae",
+                "qualifiedName": "braff.xdpdpa_dpae@Sandbox_storage",
+                "storedAsSubDirectories": false,
+                "inputFormat": "org.apache.hadoop.hive.ql.io.orc.OrcInputFormat",
+                "numBuckets": 3,
+                "sortCols": null,
+                "bucketCols": [
+                    "kc_organisme_source"
+                ],
+                "table": {
+                    "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                    "$typeName$": "hive_table",
+                    "version": 0,
+                    "state": "ACTIVE"
+                },
+                "serdeInfo": {
+                    "$typeName$": "hive_serde",
+                    "serializationLib": "org.apache.hadoop.hive.ql.io.orc.OrcSerde",
+                    "parameters": {
+                        "serialization.format": "1"
+                    },
+                    "name": null
+                }
+            },
+            "columns": [
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "2fabbd68-fa91-4dfc-9860-cc145be738e7",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "OPRID",
+                    "qualifiedName": "braff.xdpdpa_dpae.oprid@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "oprid",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "ece97958-8734-4a4d-878f-6ba0b71d0bff",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Date de MaJ",
+                    "qualifiedName": "braff.xdpdpa_dpae.datmaj@Sandbox",
+                    "type": "timestamp",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "datmaj",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "b4985d14-c869-4203-8699-de2e2e4f35a1",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Numero evenement",
+                    "qualifiedName": "braff.xdpdpa_dpae.numevt@Sandbox",
+                    "type": "decimal(38,0)",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "numevt",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "18c9827c-34f3-4d57-988e-3fc9e0199770",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Numero de lot",
+                    "qualifiedName": "braff.xdpdpa_dpae.numlot@Sandbox",
+                    "type": "decimal(38,0)",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "numlot",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "8068971b-ceb8-4f12-a760-d46762476304",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Identifiant organisme source",
+                    "qualifiedName": "braff.xdpdpa_dpae.kc_organisme_source@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "kc_organisme_source",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "8f0e62d3-e8ef-41e9-aa1c-ffc2c1b40e4e",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Organisme emetteur",
+                    "qualifiedName": "braff.xdpdpa_dpae.kc_organisme_emetteur@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "kc_organisme_emetteur",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "550a088d-3215-4c1f-8b52-4efc291a6a9c",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Mois statistique",
+                    "qualifiedName": "braff.xdpdpa_dpae.kc_moisstatistique@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "kc_moisstatistique",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "b27f86de-77a7-4bab-8faa-5f0eee383d84",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Date de creation",
+                    "qualifiedName": "braff.xdpdpa_dpae.kd_datecreation@Sandbox",
+                    "type": "timestamp",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "kd_datecreation",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "8afc74ac-deaf-4a4a-bf2e-a69c332a3260",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Non utilise",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_filler1@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_filler1",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "9263c9a8-819e-4276-a6d2-8748780a7c82",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Numero SIRET",
+                    "qualifiedName": "braff.xdpdpa_dpae.kc_siret@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "kc_siret",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "5650ecdc-83c4-4a36-a213-75bdd8c07571",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Code NAF",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_naf_id@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_naf_id",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "$traits$": {
+                        "REFERS_TO": {
+                            "$typeName$": "REFERS_TO",
+                            "REF_NAFREV2": "",
+                            "Table_cible": "toto;tata;REF_NAFREV2"
+                        }
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "b49d12af-c7e3-4f07-9437-13d792507ceb",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Nom ou raison sociale",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_nomraisonsociale@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_nomraisonsociale",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "1a6e5323-4dc5-4533-9aae-d4a660105017",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Adresse",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_adresse@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_adresse",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "$traits$": {
+                        "SENSIBLE": {
+                            "$typeName$": "SENSIBLE"
+                        }
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "c31e8a11-8a69-4fb5-9075-2c16c5af6594",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Code Postal",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_codepostal@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_codepostal",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "c26a061b-f3f5-42e2-b4f1-3ee5e258e59b",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Commune",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_lblcommune@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_lblcommune",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "facacfe2-6022-40f0-bc7f-ff23285f1646",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Code Pays",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_codepays@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_codepays",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "d8bc87f3-8815-424b-ac76-794316cc339c",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Telephone",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_telephone@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_telephone",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "$traits$": {
+                        "PII": {
+                            "$typeName$": "PII",
+                            "Domaine": null
+                        }
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "a5e67a3b-e994-4c8d-a537-ab19ba1b94e5",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Code Prive Public",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_privepublic@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_privepublic",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "3e3debb1-4af2-41b5-a2ca-cdf0c428424f",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Code Commune Insee",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_commune_id@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_commune_id",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "b008f741-aa2e-4689-a4d1-74b993252c93",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Taille etablissement",
+                    "qualifiedName": "braff.xdpdpa_dpae.dn_tailleetablissement@Sandbox",
+                    "type": "int",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dn_tailleetablissement",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "26dfce83-44a0-4c0d-a451-df266f86c18d",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Categorie Juridique",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_categoriesjuridiques_id@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_categoriesjuridiques_id",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "d680501f-b2b0-44ee-aada-dd3399e59dd5",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Unite",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_unite@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_unite",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "045a3194-8b18-4601-86f6-1747cdc97eb8",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Identifiant RCE de l'etablissement Numerique",
+                    "qualifiedName": "braff.xdpdpa_dpae.dn_employeur@Sandbox",
+                    "type": "bigint",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dn_employeur",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "39de4935-d63e-45d1-a6af-fc93317f25a6",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Non utilise",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_filler2@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_filler2",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "66112253-1190-4357-9e08-c33abcd162a9",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Numero d'inscription au repertoire national d'identification",
+                    "qualifiedName": "braff.xdpdpa_dpae.kc_nir@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "kc_nir",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "$traits$": {
+                        "PII": {
+                            "$typeName$": "PII",
+                            "Domaine": null
+                        }
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "f2f208ef-6085-4fb9-8e65-f3109e4cde1b",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Statut du NIR DPAE",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_statutnirdpae@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_statutnirdpae",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "faa8902c-6ac4-4976-8344-06aa7682fb47",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Statut du NIR BNI",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_statutnirbni@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_statutnirbni",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "0f32632e-d499-4c42-b72d-3704faa07391",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Correspondance",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_correspondance@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_correspondance",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "828c2bab-ab0f-4bbf-b9e9-9f600d88f182",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Date de naissance",
+                    "qualifiedName": "braff.xdpdpa_dpae.kd_datenaissance@Sandbox",
+                    "type": "timestamp",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "kd_datenaissance",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "31247d57-769d-4851-aefe-d095fe49ce12",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Commune de naissance ou pays",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_communenaissancepays@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_communenaissancepays",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "4e09e9ec-4d0c-4b87-91a5-9bd4ecfeda59",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Departement de naissance",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_departementnaissance@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_departementnaissance",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "402821d4-1204-4cf6-81ed-563c457b34f1",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Nom",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_nom@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_nom",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "$traits$": {
+                        "PII": {
+                            "$typeName$": "PII",
+                            "Domaine": "RH"
+                        }
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "9bfa8654-615a-4ae0-b992-53a1aa760e10",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Prenom",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_prenom@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_prenom",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "$traits$": {
+                        "PII": {
+                            "$typeName$": "PII",
+                            "Domaine": null
+                        }
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "25296e5c-b997-4d0f-8a58-3d261dde60dc",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Nom d'epoux",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_nomepoux@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_nomepoux",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "$traits$": {
+                        "PII": {
+                            "$typeName$": "PII",
+                            "Domaine": "FRAUD"
+                        }
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "383b5f34-a299-4a71-9925-7ef87ed15b8e",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Sexe",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_sexe@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_sexe",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "30e16ea3-a16b-427f-97e6-32d749f4d5e3",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Identifiant local du DE",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_individu_local@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_individu_local",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "$traits$": {
+                        "PII": {
+                            "$typeName$": "PII",
+                            "Domaine": null
+                        }
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "62b33cd4-df8b-44fa-aa57-03fe85de6f3f",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Statut Identifiant SIGMA",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_statutindividulocal@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_statutindividulocal",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "faefa7f6-8bc8-452a-b0b7-e6c21667f6d7",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Code Commune INSEE de residence",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_commune_residence_id@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_commune_residence_id",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "8aa589a6-4ebf-4a21-9064-32e6db1bbd43",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Identifiant DE BNI Alpha",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_individu_national@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_individu_national",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "$traits$": {
+                        "PII": {
+                            "$typeName$": "PII",
+                            "Domaine": null
+                        }
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "8f7e27a0-bfc2-47f2-972b-f208a0ab15ee",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Non utilise",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_filler3@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_filler3",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "1f068236-1610-4827-9db8-708e29dc352a",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Date d'embauche",
+                    "qualifiedName": "braff.xdpdpa_dpae.kd_dateembauche@Sandbox",
+                    "type": "timestamp",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "kd_dateembauche",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "67afaa01-7524-48c6-9405-0d4417a853c7",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Heure d'embauche",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_heureembauche@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_heureembauche",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "afd763a9-0c8a-4c4f-9126-b312eb06b68e",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Type de contrat d'embauche (1=CDD 2=CDI 3=CTT)",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_typecontrat_id@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_typecontrat_id",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "a419ac16-51ba-4cbc-af3a-7c88c1f236a6",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Date de fin CDD",
+                    "qualifiedName": "braff.xdpdpa_dpae.dd_datefincdd@Sandbox",
+                    "type": "timestamp",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dd_datefincdd",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "77323da0-073e-465a-a3e5-0f60505d7f84",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Code Qualite du salarie",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_qualitesalarie_id@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_qualitesalarie_id",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "a21aae05-4478-4d31-8479-f7353e422996",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Nature de l'emploi et qualification",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_natureemploi_id@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_natureemploi_id",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "d8e9b13e-4f7f-4577-9f24-303321864fef",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Duree du travail hebdomadaire en heures",
+                    "qualifiedName": "braff.xdpdpa_dpae.dn_dureetravailhebdo@Sandbox",
+                    "type": "bigint",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dn_dureetravailhebdo",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "090189a4-a3b7-47a6-9bc3-11724b8483fd",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Duree du travail mensuelle en heures",
+                    "qualifiedName": "braff.xdpdpa_dpae.dn_dureetravailmensuelle@Sandbox",
+                    "type": "bigint",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dn_dureetravailmensuelle",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "3c7fc8ce-c906-4d21-ad88-c33f125c411d",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Duree du travail annuelle en heures",
+                    "qualifiedName": "braff.xdpdpa_dpae.dn_dureetravailannuelle@Sandbox",
+                    "type": "bigint",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dn_dureetravailannuelle",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "e82b3d1d-beec-4cfa-bd3c-f32c316f24d1",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Duree de la periode d'essai",
+                    "qualifiedName": "braff.xdpdpa_dpae.dn_dureeperiodeessai@Sandbox",
+                    "type": "bigint",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dn_dureeperiodeessai",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "ded228cc-5724-46ee-b2d2-ac6865d45f97",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Non utilise",
+                    "qualifiedName": "braff.xdpdpa_dpae.dc_filler4@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "dc_filler4",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "f9a9d877-388d-42d1-a60e-524a23711c49",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Nom du fichier source",
+                    "qualifiedName": "braff.xdpdpa_dpae.filename@Sandbox",
+                    "type": "string",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "filename",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "c270183e-b41f-46be-bbd8-379bc7b0d886",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Date d'ajout dans le niveau RAW",
+                    "qualifiedName": "braff.xdpdpa_dpae.date_import_raw@Sandbox",
+                    "type": "timestamp",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "date_import_raw",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                },
+                {
+                    "$typeName$": "hive_column",
+                    "$id$": {
+                        "id": "257dc344-b700-4e81-8c48-58207515610b",
+                        "$typeName$": "hive_column",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    },
+                    "comment": "Date d'ajout dans le niveau CLEAN",
+                    "qualifiedName": "braff.xdpdpa_dpae.date_insertion_clean@Sandbox",
+                    "type": "timestamp",
+                    "owner": "raj_ops",
+                    "description": null,
+                    "name": "date_insertion_clean",
+                    "table": {
+                        "id": "eaaaa053-ca0c-4287-b57a-e25377fe39c2",
+                        "$typeName$": "hive_table",
+                        "version": 0,
+                        "state": "ACTIVE"
+                    }
+                }
+            ],
+            "viewOriginalText": null,
+            "owner": "raj_ops",
+            "description": null,
+            "db": {
+                "id": "7ec55649-7dac-48f3-aa26-235144b00a58",
+                "$typeName$": "hive_db",
+                "version": 0,
+                "state": "ACTIVE"
+            },
+            "name": "xdpdpa_dpae",
+            "temporary": false,
+            "createTime": "2017-01-04T09:34:19.000Z",
+            "lastAccessTime": "2017-01-04T09:34:19.000Z",
+            "tableType": "MANAGED_TABLE",
+            "viewExpandedText": null,
+            "$traits$": {
+                "Catalog.Sémantique.Déclaration_préalable_a_l_embauche": {
+                    "$typeName$": "Catalog.Sémantique.Déclaration_préalable_a_l_embauche",
+                    "available_as_tag": false,
+                    "description": "",
+                    "name": "Catalog.Sémantique.Déclaration_préalable_a_l_embauche",
+                    "acceptable_use": null,
+                    "taxonomy.namespace": "atlas.taxonomy"
+                },
+                "Catalog.MMD.DONNEES_EXTERNE.DPAE": {
+                    "$typeName$": "Catalog.MMD.DONNEES_EXTERNE.DPAE",
+                    "available_as_tag": false,
+                    "description": "",
+                    "name": "Catalog.MMD.DONNEES_EXTERNE.DPAE",
+                    "acceptable_use": null,
+                    "taxonomy.namespace": "atlas.taxonomy"
+                },
+                "Catalog.MMD.DONNEES_EXTERNES.DPAE": {
+                    "$typeName$": "Catalog.MMD.DONNEES_EXTERNES.DPAE",
+                    "available_as_tag": false,
+                    "description": "",
+                    "name": "Catalog.MMD.DONNEES_EXTERNES.DPAE",
+                    "acceptable_use": null,
+                    "taxonomy.namespace": "atlas.taxonomy"
+                },
+                "Catalog.POS.Echanges": {
+                    "$typeName$": "Catalog.POS.Echanges",
+                    "available_as_tag": false,
+                    "description": "",
+                    "name": "Catalog.POS.Echanges",
+                    "acceptable_use": null,
+                    "taxonomy.namespace": "atlas.taxonomy"
+                },
+                "OBJET_METIER": {
+                    "$typeName$": "OBJET_METIER"
+                },
+                "SENSIBLE": {
+                    "$typeName$": "SENSIBLE"
+                }
+            }
+        }
+    ],
+    "dataType": {
+        "superTypes": [
+            "DataSet"
+        ],
+        "hierarchicalMetaTypeName": "org.apache.atlas.typesystem.types.ClassType",
+        "typeName": "hive_table",
+        "typeDescription": null,
+        "attributeDefinitions": [
+            {
+                "name": "db",
+                "dataTypeName": "hive_db",
+                "multiplicity": {
+                    "lower": 1,
+                    "upper": 1,
+                    "isUnique": false
+                },
+                "isComposite": false,
+                "isUnique": false,
+                "isIndexable": false,
+                "reverseAttributeName": null
+            },
+            {
+                "name": "createTime",
+                "dataTypeName": "date",
+                "multiplicity": {
+                    "lower": 0,
+                    "upper": 1,
+                    "isUnique": false
+                },
+                "isComposite": false,
+                "isUnique": false,
+                "isIndexable": false,
+                "reverseAttributeName": null
+            },
+            {
+                "name": "lastAccessTime",
+                "dataTypeName": "date",
+                "multiplicity": {
+                    "lower": 0,
+                    "upper": 1,
+                    "isUnique": false
+                },
+                "isComposite": false,
+                "isUnique": false,
+                "isIndexable": false,
+                "reverseAttributeName": null
+            },
+            {
+                "name": "comment",
+                "dataTypeName": "string",
+                "multiplicity": {
+                    "lower": 0,
+                    "upper": 1,
+                    "isUnique": false
+                },
+                "isComposite": false,
+                "isUnique": false,
+                "isIndexable": false,
+                "reverseAttributeName": null
+            },
+            {
+                "name": "retention",
+                "dataTypeName": "int",
+                "multiplicity": {
+                    "lower": 0,
+                    "upper": 1,
+                    "isUnique": false
+                },
+                "isComposite": false,
+                "isUnique": false,
+                "isIndexable": false,
+                "reverseAttributeName": null
+            },
+            {
+                "name": "sd",
+                "dataTypeName": "hive_storagedesc",
+                "multiplicity": {
+                    "lower": 0,
+                    "upper": 1,
+                    "isUnique": false
+                },
+                "isComposite": true,
+                "isUnique": false,
+                "isIndexable": false,
+                "reverseAttributeName": null
+            },
+            {
+                "name": "partitionKeys",
+                "dataTypeName": "array<hive_column>",
+                "multiplicity": {
+                    "lower": 0,
+                    "upper": 1,
+                    "isUnique": false
+                },
+                "isComposite": true,
+                "isUnique": false,
+                "isIndexable": false,
+                "reverseAttributeName": null
+            },
+            {
+                "name": "aliases",
+                "dataTypeName": "array<string>",
+                "multiplicity": {
+                    "lower": 0,
+                    "upper": 1,
+                    "isUnique": false
+                },
+                "isComposite": true,
+                "isUnique": false,
+                "isIndexable": false,
+                "reverseAttributeName": null
+            },
+            {
+                "name": "columns",
+                "dataTypeName": "array<hive_column>",
+                "multiplicity": {
+                    "lower": 0,
+                    "upper": 1,
+                    "isUnique": false
+                },
+                "isComposite": true,
+                "isUnique": false,
+                "isIndexable": false,
+                "reverseAttributeName": null
+            },
+            {
+                "name": "parameters",
+                "dataTypeName": "map<string,string>",
+                "multiplicity": {
+                    "lower": 0,
+                    "upper": 1,
+                    "isUnique": false
+                },
+                "isComposite": false,
+                "isUnique": false,
+                "isIndexable": false,
+                "reverseAttributeName": null
+            },
+            {
+                "name": "viewOriginalText",
+                "dataTypeName": "string",
+                "multiplicity": {
+                    "lower": 0,
+                    "upper": 1,
+                    "isUnique": false
+                },
+                "isComposite": false,
+                "isUnique": false,
+                "isIndexable": false,
+                "reverseAttributeName": null
+            },
+            {
+                "name": "viewExpandedText",
+                "dataTypeName": "string",
+                "multiplicity": {
+                    "lower": 0,
+                    "upper": 1,
+                    "isUnique": false
+                },
+                "isComposite": false,
+                "isUnique": false,
+                "isIndexable": false,
+                "reverseAttributeName": null
+            },
+            {
+                "name": "tableType",
+                "dataTypeName": "string",
+                "multiplicity": {
+                    "lower": 0,
+                    "upper": 1,
+                    "isUnique": false
+                },
+                "isComposite": false,
+                "isUnique": false,
+                "isIndexable": false,
+                "reverseAttributeName": null
+            },
+            {
+                "name": "temporary",
+                "dataTypeName": "boolean",
+                "multiplicity": {
+                    "lower": 0,
+                    "upper": 1,
+                    "isUnique": false
+                },
+                "isComposite": false,
+                "isUnique": false,
+                "isIndexable": true,
+                "reverseAttributeName": null
+            }
+        ]
+    }
+
+}
