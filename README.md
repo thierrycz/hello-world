@@ -1,5 +1,3 @@
 # hello-world
 
-on essaye de faire quelques modifications
-dans ce fichier pour comprendre comment
-fonctionne la mécanique des branches
+manips autour de l'api rest atlas et du traitement du résulat json en javascript
