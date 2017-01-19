@@ -1,0 +1,30 @@
+{
+
+    "typeName": "PII",
+    "definition": {
+        "enumTypes": [ ],
+        "structTypes": [ ],
+        "traitTypes": [
+            {
+                "superTypes": [ ],
+                "hierarchicalMetaTypeName": "org.apache.atlas.typesystem.types.TraitType",
+                "typeName": "PII",
+                "typeDescription": "classification \"données nominatives et personnelles\"",
+                "attributeDefinitions": [
+                    {
+                        "name": "Domaine",
+                        "dataTypeName": "string",
+                        "multiplicity": "optional",
+                        "isComposite": false,
+                        "isUnique": false,
+                        "isIndexable": false,
+                        "reverseAttributeName": null
+                    }
+                ]
+            }
+        ],
+        "classTypes": [ ]
+    },
+    "requestId": "qtp662559856-55801 - b7bd2ab4-636c-40fb-a4d2-9d4de50b0aa7"
+
+}

@@ -1,0 +1,30 @@
+<script>
+// four variables are created and assigned in a single go, 
+// separated by commas
+var myObj = new Object(),
+    str = "myString",
+    rand = Math.random(),
+    obj = new Object();
+
+myObj.type              = "Dot syntax";
+myObj["date created"]   = "String with space";
+myObj[str]              = "String value";
+myObj[rand]             = "Random Number";
+myObj[obj]              = "Object";
+myObj[""]               = "Even an empty string";
+
+console.log(myObj);
+
+function showProps(obj, objName) {
+  var result = "";
+  for (var i in obj) {
+    // obj.hasOwnProperty() is used to filter out properties from the object's prototype chain
+    if (obj.hasOwnProperty(i)) {
+      result += objName + "." + i + " = " + obj[i] + "\n";
+    }
+  }
+  return result;
+}
+
+console.log(showProps(myObj, "myObj"))
+</script>

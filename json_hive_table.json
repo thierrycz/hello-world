@@ -1,0 +1,841 @@
+{
+
+	"requestId": "qtp662559856-63035 - c409641a-4943-4e64-b093-e92e353ce6ab",
+	"query": "hive_table where name='customer'",
+	"queryType": "dsl",
+	"count": 1,
+	"results": [{
+		"$typeName$": "hive_table",
+		"$id$": {
+			"id": "a9a008e1-5d84-4cbf-9236-2f5333b2442e",
+			"$typeName$": "hive_table",
+			"version": 0,
+			"state": "ACTIVE"
+		},
+		"aliases": null,
+		"comment": null,
+		"retention": 0,
+		"parameters": {
+			"numFiles": "1",
+			"transient_lastDdlTime": "1473765422",
+			"totalSize": "719866",
+			"orc.compress": "SNAPPY",
+			"EXTERNAL": "TRUE"
+		},
+		"qualifiedName": "foodmart.customer@Sandbox",
+		"partitionKeys": null,
+		"sd": {
+			"$typeName$": "hive_storagedesc",
+			"$id$": {
+				"id": "c8d33408-f896-428f-9d34-d5d635332b37",
+				"$typeName$": "hive_storagedesc",
+				"version": 0,
+				"state": "ACTIVE"
+			},
+			"parameters": null,
+			"compressed": false,
+			"outputFormat": "org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat",
+			"location": "hdfs://sandbox.hortonworks.com:8020/apps/hive/warehouse/foodmart.db/customer",
+			"qualifiedName": "foodmart.customer@Sandbox_storage",
+			"storedAsSubDirectories": false,
+			"inputFormat": "org.apache.hadoop.hive.ql.io.orc.OrcInputFormat",
+			"numBuckets": -1,
+			"sortCols": null,
+			"bucketCols": null,
+			"table": {
+				"id": "a9a008e1-5d84-4cbf-9236-2f5333b2442e",
+				"$typeName$": "hive_table",
+				"version": 0,
+				"state": "ACTIVE"
+			},
+			"serdeInfo": {
+				"$typeName$": "hive_serde",
+				"serializationLib": "org.apache.hadoop.hive.ql.io.orc.OrcSerde",
+				"parameters": {
+					"serialization.format": "1"
+				},
+				"name": null
+			}
+		},
+		"columns": [{
+			"$typeName$": "hive_column",
+			"$id$": {
+				"id": "1a2aedc0-8f53-4ae7-bcd1-59ae848f1a28",
+				"$typeName$": "hive_column",
+				"version": 0,
+				"state": "ACTIVE"
+			},
+			"comment": null,
+			"qualifiedName": "foodmart.customer.customer_id@Sandbox",
+			"type": "int",
+			"owner": "hive",
+			"description": null,
+			"name": "customer_id",
+			"table": {
+				"id": "a9a008e1-5d84-4cbf-9236-2f5333b2442e",
+				"$typeName$": "hive_table",
+				"version": 0,
+				"state": "ACTIVE"
+			}
+		}, {
+			"$typeName$": "hive_column",
+			"$id$": {
+				"id": "a5dd0609-f814-423b-ae03-53e10369dda4",
+				"$typeName$": "hive_column",
+				"version": 0,
+				"state": "ACTIVE"
+			},
+			"comment": null,
+			"qualifiedName": "foodmart.customer.account_num@Sandbox",
+			"type": "bigint",
+			"owner": "hive",
+			"description": null,
+			"name": "account_num",
+			"table": {
+				"id": "a9a008e1-5d84-4cbf-9236-2f5333b2442e",
+				"$typeName$": "hive_table",
+				"version": 0,
+				"state": "ACTIVE"
+			}
+		}, {
+			"$typeName$": "hive_column",
+			"$id$": {
+				"id": "773194a9-6152-4808-a96e-3381904c41da",
+				"$typeName$": "hive_column",
+				"version": 0,
+				"state": "ACTIVE"
+			},
+			"comment": null,
+			"qualifiedName": "foodmart.customer.lname@Sandbox",
+			"type": "varchar(30)",
+			"owner": "hive",
+			"description": null,
+			"name": "lname",
+			"table": {
+				"id": "a9a008e1-5d84-4cbf-9236-2f5333b2442e",
+				"$typeName$": "hive_table",
+				"version": 0,
+				"state": "ACTIVE"
+			}
+		}, {
+			"$typeName$": "hive_column",
+			"$id$": {
+				"id": "ac38408f-69cf-4192-a669-7d75010c2b3a",
+				"$typeName$": "hive_column",
+				"version": 0,
+				"state": "ACTIVE"
+			},
+			"comment": null,
+			"qualifiedName": "foodmart.customer.fname@Sandbox",
+			"type": "varchar(30)",
+			"owner": "hive",
+			"description": null,
+			"name": "fname",
+			"table": {
+				"id": "a9a008e1-5d84-4cbf-9236-2f5333b2442e",
+				"$typeName$": "hive_table",
+				"version": 0,
+				"state": "ACTIVE"
+			}
+		}, {
+			"$typeName$": "hive_column",
+			"$id$": {
+				"id": "8571609e-e1b5-4895-a9bf-b3651dac3e32",
+				"$typeName$": "hive_column",
+				"version": 0,
+				"state": "ACTIVE"
+			},
+			"comment": null,
+			"qualifiedName": "foodmart.customer.mi@Sandbox",
+			"type": "varchar(30)",
+			"owner": "hive",
+			"description": null,
+			"name": "mi",
+			"table": {
+				"id": "a9a008e1-5d84-4cbf-9236-2f5333b2442e",
+				"$typeName$": "hive_table",
+				"version": 0,
+				"state": "ACTIVE"
+			}
+		}, {
+			"$typeName$": "hive_column",
+			"$id$": {
+				"id": "5db0cf9c-ce14-4f0f-86d2-ab25ebc69faf",
+				"$typeName$": "hive_column",
+				"version": 0,
+				"state": "ACTIVE"
+			},
+			"comment": null,
+			"qualifiedName": "foodmart.customer.address1@Sandbox",
+			"type": "varchar(30)",
+			"owner": "hive",
+			"description": null,
+			"name": "address1",
+			"table": {
+				"id": "a9a008e1-5d84-4cbf-9236-2f5333b2442e",
+				"$typeName$": "hive_table",
+				"version": 0,
+				"state": "ACTIVE"
+			}
+		}, {
+			"$typeName$": "hive_column",
+			"$id$": {
+				"id": "7454b04a-673d-4efc-bc85-59913556d805",
+				"$typeName$": "hive_column",
+				"version": 0,
+				"state": "ACTIVE"
+			},
+			"comment": null,
+			"qualifiedName": "foodmart.customer.address2@Sandbox",
+			"type": "varchar(30)",
+			"owner": "hive",
+			"description": null,
+			"name": "address2",
+			"table": {
+				"id": "a9a008e1-5d84-4cbf-9236-2f5333b2442e",
+				"$typeName$": "hive_table",
+				"version": 0,
+				"state": "ACTIVE"
+			}
+		}, {
+			"$typeName$": "hive_column",
+			"$id$": {
+				"id": "df24bef3-ba3c-4f96-a7e0-734fea8d120c",
+				"$typeName$": "hive_column",
+				"version": 0,
+				"state": "ACTIVE"
+			},
+			"comment": null,
+			"qualifiedName": "foodmart.customer.address3@Sandbox",
+			"type": "varchar(30)",
+			"owner": "hive",
+			"description": null,
+			"name": "address3",
+			"table": {
+				"id": "a9a008e1-5d84-4cbf-9236-2f5333b2442e",
+				"$typeName$": "hive_table",
+				"version": 0,
+				"state": "ACTIVE"
+			}
+		}, {
+			"$typeName$": "hive_column",
+			"$id$": {
+				"id": "a9078597-e213-4d02-8be1-ed6cc9d5e4a4",
+				"$typeName$": "hive_column",
+				"version": 0,
+				"state": "ACTIVE"
+			},
+			"comment": null,
+			"qualifiedName": "foodmart.customer.address4@Sandbox",
+			"type": "varchar(30)",
+			"owner": "hive",
+			"description": null,
+			"name": "address4",
+			"table": {
+				"id": "a9a008e1-5d84-4cbf-9236-2f5333b2442e",
+				"$typeName$": "hive_table",
+				"version": 0,
+				"state": "ACTIVE"
+			}
+		}, {
+			"$typeName$": "hive_column",
+			"$id$": {
+				"id": "ec7ae607-501c-49b2-baa0-b04ffdc220a9",
+				"$typeName$": "hive_column",
+				"version": 0,
+				"state": "ACTIVE"
+			},
+			"comment": null,
+			"qualifiedName": "foodmart.customer.city@Sandbox",
+			"type": "varchar(30)",
+			"owner": "hive",
+			"description": null,
+			"name": "city",
+			"table": {
+				"id": "a9a008e1-5d84-4cbf-9236-2f5333b2442e",
+				"$typeName$": "hive_table",
+				"version": 0,
+				"state": "ACTIVE"
+			}
+		}, {
+			"$typeName$": "hive_column",
+			"$id$": {
+				"id": "82acf7b4-77fb-4fbe-aec6-47e453406fd0",
+				"$typeName$": "hive_column",
+				"version": 0,
+				"state": "ACTIVE"
+			},
+			"comment": null,
+			"qualifiedName": "foodmart.customer.state_province@Sandbox",
+			"type": "varchar(30)",
+			"owner": "hive",
+			"description": null,
+			"name": "state_province",
+			"table": {
+				"id": "a9a008e1-5d84-4cbf-9236-2f5333b2442e",
+				"$typeName$": "hive_table",
+				"version": 0,
+				"state": "ACTIVE"
+			}
+		}, {
+			"$typeName$": "hive_column",
+			"$id$": {
+				"id": "3c2cfbfe-4e6f-4ea2-a467-9a8a9bb4f93f",
+				"$typeName$": "hive_column",
+				"version": 0,
+				"state": "ACTIVE"
+			},
+			"comment": null,
+			"qualifiedName": "foodmart.customer.postal_code@Sandbox",
+			"type": "varchar(30)",
+			"owner": "hive",
+			"description": null,
+			"name": "postal_code",
+			"table": {
+				"id": "a9a008e1-5d84-4cbf-9236-2f5333b2442e",
+				"$typeName$": "hive_table",
+				"version": 0,
+				"state": "ACTIVE"
+			}
+		}, {
+			"$typeName$": "hive_column",
+			"$id$": {
+				"id": "ec5ec593-0f15-4443-9ee7-b3d5756b92d4",
+				"$typeName$": "hive_column",
+				"version": 0,
+				"state": "ACTIVE"
+			},
+			"comment": null,
+			"qualifiedName": "foodmart.customer.country@Sandbox",
+			"type": "varchar(30)",
+			"owner": "hive",
+			"description": null,
+			"name": "country",
+			"table": {
+				"id": "a9a008e1-5d84-4cbf-9236-2f5333b2442e",
+				"$typeName$": "hive_table",
+				"version": 0,
+				"state": "ACTIVE"
+			}
+		}, {
+			"$typeName$": "hive_column",
+			"$id$": {
+				"id": "d6d0ae9c-5bad-46ba-b9dd-c3deeeb5feb7",
+				"$typeName$": "hive_column",
+				"version": 0,
+				"state": "ACTIVE"
+			},
+			"comment": null,
+			"qualifiedName": "foodmart.customer.customer_region_id@Sandbox",
+			"type": "int",
+			"owner": "hive",
+			"description": null,
+			"name": "customer_region_id",
+			"table": {
+				"id": "a9a008e1-5d84-4cbf-9236-2f5333b2442e",
+				"$typeName$": "hive_table",
+				"version": 0,
+				"state": "ACTIVE"
+			}
+		}, {
+			"$typeName$": "hive_column",
+			"$id$": {
+				"id": "b1185003-ef1e-4ae2-949d-96941f7ff601",
+				"$typeName$": "hive_column",
+				"version": 0,
+				"state": "ACTIVE"
+			},
+			"comment": null,
+			"qualifiedName": "foodmart.customer.phone1@Sandbox",
+			"type": "varchar(30)",
+			"owner": "hive",
+			"description": null,
+			"name": "phone1",
+			"table": {
+				"id": "a9a008e1-5d84-4cbf-9236-2f5333b2442e",
+				"$typeName$": "hive_table",
+				"version": 0,
+				"state": "ACTIVE"
+			}
+		}, {
+			"$typeName$": "hive_column",
+			"$id$": {
+				"id": "3ba8b72e-2af9-49bf-9ee3-8f4be1a38a7a",
+				"$typeName$": "hive_column",
+				"version": 0,
+				"state": "ACTIVE"
+			},
+			"comment": null,
+			"qualifiedName": "foodmart.customer.phone2@Sandbox",
+			"type": "varchar(30)",
+			"owner": "hive",
+			"description": null,
+			"name": "phone2",
+			"table": {
+				"id": "a9a008e1-5d84-4cbf-9236-2f5333b2442e",
+				"$typeName$": "hive_table",
+				"version": 0,
+				"state": "ACTIVE"
+			}
+		}, {
+			"$typeName$": "hive_column",
+			"$id$": {
+				"id": "ef22168f-9877-4898-a249-a73f266444e6",
+				"$typeName$": "hive_column",
+				"version": 0,
+				"state": "ACTIVE"
+			},
+			"comment": null,
+			"qualifiedName": "foodmart.customer.birthdate@Sandbox",
+			"type": "date",
+			"owner": "hive",
+			"description": null,
+			"name": "birthdate",
+			"table": {
+				"id": "a9a008e1-5d84-4cbf-9236-2f5333b2442e",
+				"$typeName$": "hive_table",
+				"version": 0,
+				"state": "ACTIVE"
+			}
+		}, {
+			"$typeName$": "hive_column",
+			"$id$": {
+				"id": "5a54375d-98e5-47e0-97e2-0c4ba2b1dd2d",
+				"$typeName$": "hive_column",
+				"version": 0,
+				"state": "ACTIVE"
+			},
+			"comment": null,
+			"qualifiedName": "foodmart.customer.marital_status@Sandbox",
+			"type": "varchar(30)",
+			"owner": "hive",
+			"description": null,
+			"name": "marital_status",
+			"table": {
+				"id": "a9a008e1-5d84-4cbf-9236-2f5333b2442e",
+				"$typeName$": "hive_table",
+				"version": 0,
+				"state": "ACTIVE"
+			}
+		}, {
+			"$typeName$": "hive_column",
+			"$id$": {
+				"id": "689b0daf-262a-4f4e-92d2-2f653f1c9c48",
+				"$typeName$": "hive_column",
+				"version": 0,
+				"state": "ACTIVE"
+			},
+			"comment": null,
+			"qualifiedName": "foodmart.customer.yearly_income@Sandbox",
+			"type": "varchar(30)",
+			"owner": "hive",
+			"description": null,
+			"name": "yearly_income",
+			"table": {
+				"id": "a9a008e1-5d84-4cbf-9236-2f5333b2442e",
+				"$typeName$": "hive_table",
+				"version": 0,
+				"state": "ACTIVE"
+			}
+		}, {
+			"$typeName$": "hive_column",
+			"$id$": {
+				"id": "1769d025-1f8e-44f7-9a1c-87d4d5ec509b",
+				"$typeName$": "hive_column",
+				"version": 0,
+				"state": "ACTIVE"
+			},
+			"comment": null,
+			"qualifiedName": "foodmart.customer.gender@Sandbox",
+			"type": "varchar(30)",
+			"owner": "hive",
+			"description": null,
+			"name": "gender",
+			"table": {
+				"id": "a9a008e1-5d84-4cbf-9236-2f5333b2442e",
+				"$typeName$": "hive_table",
+				"version": 0,
+				"state": "ACTIVE"
+			}
+		}, {
+			"$typeName$": "hive_column",
+			"$id$": {
+				"id": "1d1da91c-1f1d-4dd2-9b98-2661b0e8df76",
+				"$typeName$": "hive_column",
+				"version": 0,
+				"state": "ACTIVE"
+			},
+			"comment": null,
+			"qualifiedName": "foodmart.customer.total_children@Sandbox",
+			"type": "smallint",
+			"owner": "hive",
+			"description": null,
+			"name": "total_children",
+			"table": {
+				"id": "a9a008e1-5d84-4cbf-9236-2f5333b2442e",
+				"$typeName$": "hive_table",
+				"version": 0,
+				"state": "ACTIVE"
+			}
+		}, {
+			"$typeName$": "hive_column",
+			"$id$": {
+				"id": "030b9ca6-9140-4b45-9f25-e2e955ed5025",
+				"$typeName$": "hive_column",
+				"version": 0,
+				"state": "ACTIVE"
+			},
+			"comment": null,
+			"qualifiedName": "foodmart.customer.num_children_at_home@Sandbox",
+			"type": "smallint",
+			"owner": "hive",
+			"description": null,
+			"name": "num_children_at_home",
+			"table": {
+				"id": "a9a008e1-5d84-4cbf-9236-2f5333b2442e",
+				"$typeName$": "hive_table",
+				"version": 0,
+				"state": "ACTIVE"
+			}
+		}, {
+			"$typeName$": "hive_column",
+			"$id$": {
+				"id": "3533a0a3-a57b-44ed-ab1c-14ab0bd4d35a",
+				"$typeName$": "hive_column",
+				"version": 0,
+				"state": "ACTIVE"
+			},
+			"comment": null,
+			"qualifiedName": "foodmart.customer.education@Sandbox",
+			"type": "varchar(30)",
+			"owner": "hive",
+			"description": null,
+			"name": "education",
+			"table": {
+				"id": "a9a008e1-5d84-4cbf-9236-2f5333b2442e",
+				"$typeName$": "hive_table",
+				"version": 0,
+				"state": "ACTIVE"
+			}
+		}, {
+			"$typeName$": "hive_column",
+			"$id$": {
+				"id": "da58b6b3-9ce8-4177-9810-7db68efae065",
+				"$typeName$": "hive_column",
+				"version": 0,
+				"state": "ACTIVE"
+			},
+			"comment": null,
+			"qualifiedName": "foodmart.customer.date_accnt_opened@Sandbox",
+			"type": "date",
+			"owner": "hive",
+			"description": null,
+			"name": "date_accnt_opened",
+			"table": {
+				"id": "a9a008e1-5d84-4cbf-9236-2f5333b2442e",
+				"$typeName$": "hive_table",
+				"version": 0,
+				"state": "ACTIVE"
+			}
+		}, {
+			"$typeName$": "hive_column",
+			"$id$": {
+				"id": "85626c2e-e3fa-49c9-b061-184f6cd27b35",
+				"$typeName$": "hive_column",
+				"version": 0,
+				"state": "ACTIVE"
+			},
+			"comment": null,
+			"qualifiedName": "foodmart.customer.member_card@Sandbox",
+			"type": "varchar(30)",
+			"owner": "hive",
+			"description": null,
+			"name": "member_card",
+			"table": {
+				"id": "a9a008e1-5d84-4cbf-9236-2f5333b2442e",
+				"$typeName$": "hive_table",
+				"version": 0,
+				"state": "ACTIVE"
+			}
+		}, {
+			"$typeName$": "hive_column",
+			"$id$": {
+				"id": "c41cf2ea-fa7b-4766-9592-d25cfc0ea748",
+				"$typeName$": "hive_column",
+				"version": 0,
+				"state": "ACTIVE"
+			},
+			"comment": null,
+			"qualifiedName": "foodmart.customer.occupation@Sandbox",
+			"type": "varchar(30)",
+			"owner": "hive",
+			"description": null,
+			"name": "occupation",
+			"table": {
+				"id": "a9a008e1-5d84-4cbf-9236-2f5333b2442e",
+				"$typeName$": "hive_table",
+				"version": 0,
+				"state": "ACTIVE"
+			}
+		}, {
+			"$typeName$": "hive_column",
+			"$id$": {
+				"id": "fbe88bfe-8cc1-49b4-852b-77670913ee0b",
+				"$typeName$": "hive_column",
+				"version": 0,
+				"state": "ACTIVE"
+			},
+			"comment": null,
+			"qualifiedName": "foodmart.customer.houseowner@Sandbox",
+			"type": "varchar(30)",
+			"owner": "hive",
+			"description": null,
+			"name": "houseowner",
+			"table": {
+				"id": "a9a008e1-5d84-4cbf-9236-2f5333b2442e",
+				"$typeName$": "hive_table",
+				"version": 0,
+				"state": "ACTIVE"
+			}
+		}, {
+			"$typeName$": "hive_column",
+			"$id$": {
+				"id": "98e8db78-80e8-4875-9246-887f2999ea73",
+				"$typeName$": "hive_column",
+				"version": 0,
+				"state": "ACTIVE"
+			},
+			"comment": null,
+			"qualifiedName": "foodmart.customer.num_cars_owned@Sandbox",
+			"type": "int",
+			"owner": "hive",
+			"description": null,
+			"name": "num_cars_owned",
+			"table": {
+				"id": "a9a008e1-5d84-4cbf-9236-2f5333b2442e",
+				"$typeName$": "hive_table",
+				"version": 0,
+				"state": "ACTIVE"
+			}
+		}, {
+			"$typeName$": "hive_column",
+			"$id$": {
+				"id": "a70cf0b9-f1a2-4c06-baf1-6b44456caeac",
+				"$typeName$": "hive_column",
+				"version": 0,
+				"state": "ACTIVE"
+			},
+			"comment": null,
+			"qualifiedName": "foodmart.customer.fullname@Sandbox",
+			"type": "varchar(60)",
+			"owner": "hive",
+			"description": null,
+			"name": "fullname",
+			"table": {
+				"id": "a9a008e1-5d84-4cbf-9236-2f5333b2442e",
+				"$typeName$": "hive_table",
+				"version": 0,
+				"state": "ACTIVE"
+			}
+		}],
+		"viewOriginalText": null,
+		"owner": "hive",
+		"description": null,
+		"db": {
+			"id": "5c2fc669-b4a5-4483-8a9b-4afd4090f5a6",
+			"$typeName$": "hive_db",
+			"version": 0,
+			"state": "ACTIVE"
+		},
+		"name": "customer",
+		"temporary": false,
+		"createTime": "2016-09-13T11:17:02.000Z",
+		"lastAccessTime": "2016-09-13T11:17:02.000Z",
+		"tableType": "EXTERNAL_TABLE",
+		"viewExpandedText": null,
+		"$traits$": {
+			"PII": {
+				"$typeName$": "PII",
+				"Domaine": null
+			}
+		}
+	}],
+	"dataType": {
+		"superTypes": [
+			"DataSet"
+		],
+		"hierarchicalMetaTypeName": "org.apache.atlas.typesystem.types.ClassType",
+		"typeName": "hive_table",
+		"typeDescription": null,
+		"attributeDefinitions": [{
+			"name": "db",
+			"dataTypeName": "hive_db",
+			"multiplicity": {
+				"lower": 1,
+				"upper": 1,
+				"isUnique": false
+			},
+			"isComposite": false,
+			"isUnique": false,
+			"isIndexable": false,
+			"reverseAttributeName": null
+		}, {
+			"name": "createTime",
+			"dataTypeName": "date",
+			"multiplicity": {
+				"lower": 0,
+				"upper": 1,
+				"isUnique": false
+			},
+			"isComposite": false,
+			"isUnique": false,
+			"isIndexable": false,
+			"reverseAttributeName": null
+		}, {
+			"name": "lastAccessTime",
+			"dataTypeName": "date",
+			"multiplicity": {
+				"lower": 0,
+				"upper": 1,
+				"isUnique": false
+			},
+			"isComposite": false,
+			"isUnique": false,
+			"isIndexable": false,
+			"reverseAttributeName": null
+		}, {
+			"name": "comment",
+			"dataTypeName": "string",
+			"multiplicity": {
+				"lower": 0,
+				"upper": 1,
+				"isUnique": false
+			},
+			"isComposite": false,
+			"isUnique": false,
+			"isIndexable": false,
+			"reverseAttributeName": null
+		}, {
+			"name": "retention",
+			"dataTypeName": "int",
+			"multiplicity": {
+				"lower": 0,
+				"upper": 1,
+				"isUnique": false
+			},
+			"isComposite": false,
+			"isUnique": false,
+			"isIndexable": false,
+			"reverseAttributeName": null
+		}, {
+			"name": "sd",
+			"dataTypeName": "hive_storagedesc",
+			"multiplicity": {
+				"lower": 0,
+				"upper": 1,
+				"isUnique": false
+			},
+			"isComposite": true,
+			"isUnique": false,
+			"isIndexable": false,
+			"reverseAttributeName": null
+		}, {
+			"name": "partitionKeys",
+			"dataTypeName": "array<hive_column>",
+			"multiplicity": {
+				"lower": 0,
+				"upper": 1,
+				"isUnique": false
+			},
+			"isComposite": true,
+			"isUnique": false,
+			"isIndexable": false,
+			"reverseAttributeName": null
+		}, {
+			"name": "aliases",
+			"dataTypeName": "array<string>",
+			"multiplicity": {
+				"lower": 0,
+				"upper": 1,
+				"isUnique": false
+			},
+			"isComposite": true,
+			"isUnique": false,
+			"isIndexable": false,
+			"reverseAttributeName": null
+		}, {
+			"name": "columns",
+			"dataTypeName": "array<hive_column>",
+			"multiplicity": {
+				"lower": 0,
+				"upper": 1,
+				"isUnique": false
+			},
+			"isComposite": true,
+			"isUnique": false,
+			"isIndexable": false,
+			"reverseAttributeName": null
+		}, {
+			"name": "parameters",
+			"dataTypeName": "map<string,string>",
+			"multiplicity": {
+				"lower": 0,
+				"upper": 1,
+				"isUnique": false
+			},
+			"isComposite": false,
+			"isUnique": false,
+			"isIndexable": false,
+			"reverseAttributeName": null
+		}, {
+			"name": "viewOriginalText",
+			"dataTypeName": "string",
+			"multiplicity": {
+				"lower": 0,
+				"upper": 1,
+				"isUnique": false
+			},
+			"isComposite": false,
+			"isUnique": false,
+			"isIndexable": false,
+			"reverseAttributeName": null
+		}, {
+			"name": "viewExpandedText",
+			"dataTypeName": "string",
+			"multiplicity": {
+				"lower": 0,
+				"upper": 1,
+				"isUnique": false
+			},
+			"isComposite": false,
+			"isUnique": false,
+			"isIndexable": false,
+			"reverseAttributeName": null
+		}, {
+			"name": "tableType",
+			"dataTypeName": "string",
+			"multiplicity": {
+				"lower": 0,
+				"upper": 1,
+				"isUnique": false
+			},
+			"isComposite": false,
+			"isUnique": false,
+			"isIndexable": false,
+			"reverseAttributeName": null
+		}, {
+			"name": "temporary",
+			"dataTypeName": "boolean",
+			"multiplicity": {
+				"lower": 0,
+				"upper": 1,
+				"isUnique": false
+			},
+			"isComposite": false,
+			"isUnique": false,
+			"isIndexable": true,
+			"reverseAttributeName": null
+		}]
+	}
+
+}

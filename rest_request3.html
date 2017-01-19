@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Traitement réponse atlas</title>
+<script type="text/javascript" src="oXHR.js"></script>
+<script type="text/javascript">
+<!-- 
+function request(callback) {
+	var xhr = getXMLHttpRequest();
+	
+	xhr.onreadystatechange = function() {
+		if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+			callback(xhr.responseText);
+		}
+	};
+	
+	xhr.open("GET", "json_hive_table_multi_tags.json", true);
+	xhr.send(null);
+}
+
+function readData(oData) {
+    var json = JSON.parse(oData),rep;
+	console.log('results count ' + json.count)
+	for ( var item in json.results ) {
+	console.log( 'item = ' + item )
+	}
+	
+	var itemn=json.results[item];
+	
+	//console.log('results ' + json.results.length)
+	//console.log('createtime ' + item.createTime)
+	console.log('createtime ' + itemn.createTime)
+	console.log('nb columns ' + itemn.columns.length)
+	
+	for ( var i = 0, l = json.results.length; i< l;i++) {
+	var obj = json.results[i] ;
+	console.log('results name createtime ' + obj.name + ' ' + obj.createTime)
+	//for ( var j=0, m = obj.columns.length; j<m ; j++) {
+	//var objcol = obj.columns[j];
+	//console.log('columns ' + objcol.name);}
+	//récupère la liste des propriétés d'un objet
+	//console.log( Object.keys(obj))
+	
+	var traits = obj.$traits$;
+	//console.log( Object.keys(traits))	
+	
+	for (var props in traits) {
+	//console.log( Object.keys(traits[props]))	
+	console.log('-> trait obj ' + props)
+	//console.log(traits[props] )
+	for (var content in traits[props] ) {
+	console.log(content + '=' + traits[props][content])
+	
+	}
+	}
+
+	
+	}
+	
+	//alert(json.results.columns.length)
+	//alert(oData);
+	//rep='start '
+	//rep += json.typeName;
+	//rep += '<br>' + json.definition.traitTypes[0].typeDescription ;
+	//document.getElementById('output').innerHTML += rep;
+	
+}
+//-->
+</script>
+</head>
+<body>
+<p>
+<script>
+	request(readData);
+</script>
+hello
+</p>
+<div id="output">réponse = </div>
+</body>
+</html>
