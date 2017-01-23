@@ -1,0 +1,22 @@
+
+<html>
+<head>
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+
+<script>
+var dataURL = "http://admin:admin@fw1808.dgasi.pole-emploi.intra:21000/api/atlas/types";
+var proxyUrl = "http://fewh65.dgasi.pole-emploi.intra/myproxy.php?get=";
+
+$.ajax({
+    url: proxyUrl+encodeURIComponent(dataURL),
+    async: true,
+    type: "GET",
+    dataType: "json",
+    success : function(code_html, statut){ // code_html contient le HTML renvoyé
+        console.log(code_html)   
+       }
+})
+
+
+</script>
