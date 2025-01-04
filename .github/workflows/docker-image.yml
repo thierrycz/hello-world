@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@v4
     - name: Build the Docker image
       run: |
-        docker login --username thierrycz --password ${{ secrets.CR_PAT }} ghcr.io
+        docker login ghcr.io -u thierrycz --password ${{ secrets.CR_PAT }}
         docker build . --file Dockerfile -t ghcr.io/thierrycz/nginx-test:0.1
         docker push ghcr.io/thierrycz/nginx-test:0.1
       
