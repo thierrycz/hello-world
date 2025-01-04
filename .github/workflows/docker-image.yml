@@ -15,4 +15,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      run: |
+        docker login --username thierrycz --password ${{ secrets.CR_PAT }} ghcr.io
+        docker build . --file Dockerfile -t ghcr.io/thierrycz/nginx-test:0.1
+        docker push ghcr.io/thierrycz/nginx-test:0.1
+      
