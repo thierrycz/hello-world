@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Docker Image CI iceberg
 
 on:
   push:
@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@master
     - name: Build the Docker image
       run: |
         echo ${{ secrets.PAT }} | docker login ghcr.io -u thierrycz --password-stdin
