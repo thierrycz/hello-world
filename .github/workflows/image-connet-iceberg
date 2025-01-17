@@ -1,0 +1,22 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build the Docker image
+      run: |
+        echo ${{ secrets.PAT }} | docker login ghcr.io -u thierrycz --password-stdin
+        docker build . --file Dockerfile-connect-iceberg -t ghcr.io/thierrycz/kafka-connect-iceberg:0.1
+        docker push ghcr.io/thierrycz/kafka-connect-iceberg:0.1
+      
