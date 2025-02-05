@@ -16,12 +16,14 @@ jobs:
     - uses: actions/checkout@master
     - name: Build the Docker image
       run: |
+        mc alias set b2666 https://s3.eu-central-003.backblazeb2.com ${{ secrets.ACCESSKEY }} ${{ secrets.SECRETKEY }}
+        mc ls b2666
         mkdir my-plugins
         cd my-plugins
-        wget -q https://github.com/databricks/iceberg-kafka-connect/releases/download/v0.6.19/iceberg-kafka-connect-runtime-0.6.19.zip  
-        wget -q https://github.com/databricks/iceberg-kafka-connect/releases/download/v0.6.19/iceberg-kafka-connect-runtime-hive-0.6.19.zip 
+        #wget -q https://github.com/databricks/iceberg-kafka-connect/releases/download/v0.6.19/iceberg-kafka-connect-runtime-0.6.19.zip  
+        #wget -q https://github.com/databricks/iceberg-kafka-connect/releases/download/v0.6.19/iceberg-kafka-connect-runtime-hive-0.6.19.zip 
         cd ..
         echo ${{ secrets.PAT }} | docker login ghcr.io -u thierrycz --password-stdin
-        docker build . --file Dockerfile-connect-iceberg -t ghcr.io/thierrycz/kafka-connect-iceberg:0.1
-        docker push ghcr.io/thierrycz/kafka-connect-iceberg:0.1
+        #docker build . --file Dockerfile-connect-iceberg -t ghcr.io/thierrycz/kafka-connect-iceberg-avro:0.1
+        #docker push ghcr.io/thierrycz/kafka-connect-iceberg:0.1
       
