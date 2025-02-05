@@ -24,7 +24,7 @@ jobs:
         ./mc alias set b2 https://s3.eu-central-003.backblazeb2.com ${{ secrets.ACCESSKEY }} ${{ secrets.SECRETKEY }}
         ./mc ls --recursive b2
         mkdir my-plugins
-        ./mc cp "b2/monbucket666/kafka-serde-tools.tgz" $PWD/my-plugins/kafka-serde-tools.tgz
+        ./mc cp --debug "b2/monbucket666/kafka-serde-tools.tgz" $PWD
         cd my-plugins
         tar zxf kafka-serde-tools.tgz
         ls -l
