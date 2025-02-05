@@ -21,11 +21,11 @@ jobs:
         set -vx
         curl -s -O https://dl.min.io/client/mc/release/linux-amd64/mc
         chmod +x mc
-        ./mc alias set b2666 https://s3.eu-central-003.backblazeb2.com ${{ secrets.ACCESSKEY }} ${{ secrets.SECRETKEY }}
-        ./mc ls --recursive b2666
+        ./mc alias set b2 https://s3.eu-central-003.backblazeb2.com ${{ secrets.ACCESSKEY }} ${{ secrets.SECRETKEY }}
+        ./mc ls --recursive b2
         mkdir my-plugins
         cd my-plugins
-        ../mc cp b2/monbucket666/kafka-serde-tools.tgz ./
+        ../mc cp b2/monbucket666/kafka-serde-tools.tgz .
         tar zxf kafka-serde-tools.tgz
         ls -l
         #wget -q https://github.com/databricks/iceberg-kafka-connect/releases/download/v0.6.19/iceberg-kafka-connect-runtime-0.6.19.zip  
