@@ -16,6 +16,7 @@ jobs:
     - uses: actions/checkout@master
     - name: Build the Docker image
       run: |
+        echo $PATH
         curl -sO https://dl.min.io/client/mc/release/linux-amd64/mc
         chmod +x mc
         ~/mc alias set b2666 https://s3.eu-central-003.backblazeb2.com ${{ secrets.ACCESSKEY }} ${{ secrets.SECRETKEY }}
