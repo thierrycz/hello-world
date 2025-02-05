@@ -17,7 +17,8 @@ jobs:
     - name: Build the Docker image
       run: |
         echo $PATH
-        curl -so /home/runner/.local/bin/mc https://dl.min.io/client/mc/release/linux-amd64/mc
+        set -vx
+        curl -s -o /home/runner/.local/bin/mc https://dl.min.io/client/mc/release/linux-amd64/mc
         chmod +x /home/runner/.local/bin/mc
         mc alias set b2666 https://s3.eu-central-003.backblazeb2.com ${{ secrets.ACCESSKEY }} ${{ secrets.SECRETKEY }}
         mc ls --recursive b2666
